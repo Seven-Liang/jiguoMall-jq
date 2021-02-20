@@ -1,0 +1,216 @@
+@keyframes rotateIn{
+    0%{
+        transform: translate(800px,-800px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@-webkit-keyframes rotateIn{
+    0%{
+        transform: translate(800px,-800px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@-moz-keyframes rotateIn{
+    0%{
+        transform: translate(800px,-800px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@-ms-keyframes rotateIn{
+    0%{
+        transform: translate(800px,-800px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+/* 头部banner */
+header .banner{
+    background: url(./img/original.jpg) no-repeat center top;
+    height: 300px;
+}
+header .banner .inner{
+    padding-top: 35px;
+    text-align: right;
+    color: white;
+    animation: rotateIn 1s linear
+}
+header .banner .inner h2{
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    padding: 8px 0;
+}
+/* .banner .inner .label{
+    margin-bottom: 15px;
+} */
+.banner .inner .label span{
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: rgb(255,255,255,0.3);
+    margin-right: 10px;
+}
+.banner .inner .time{
+    padding: 20px 0 20px 0;
+    font-size: 18px;
+}
+.banner .inner .btn{
+    display: inline-block;
+    width: 242px;
+    height: 48px;
+    background-color: #fe5341;
+    font-size: 24px;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+main .hot-box{
+    width: 100%;
+    height: 360px;
+}
+
+main .hot-box .inner{
+    height: 380px;
+}
+main .hot-box .inner .slide-box{
+    width: 1000px;
+    height: 295px;
+    /* background-color: skyblue; */
+    position: relative;
+}
+main .hot-box .inner .slide-box .prev ,main .hot-box .inner .slide-box .next {
+    position: absolute;
+    width: 37px;
+    height: 78px;
+    top: 105px;
+    opacity: 0;
+}
+main .hot-box .inner .slide-box .prev:hover ,main .hot-box .inner .slide-box .next:hover{
+    opacity: 0.8;
+}
+main .hot-box .inner .slide-box .prev{
+    background-image: url(./img/prev.png);
+    left: -60px;
+}
+main .hot-box .inner .slide-box .next{
+    background-image: url(./img/next.png);
+    right: -60px;
+}
+main .hot-box .inner .slide-box .hot{
+    width: 1000px;
+    height: 295px;
+    overflow: hidden;
+}
+main .hot-box .inner .slide-box .hot ul{
+    width: 3000px;
+    
+}
+main .hot-box .inner .slide-box .hot li{
+    width: 1000px;
+    height: 295px;    
+    float: left;
+}
+/* 轮播图题目+button */
+.con{
+    width: 220px;
+    height: 288px;
+    position: relative;
+    display: block;
+    color: black;
+    float: left;
+    margin-right: 37px;
+    border-radius:  6px;
+    overflow: hidden;   
+}
+.con:hover img{
+    animation: fade 1s linear infinite;
+}
+.hot .last{
+    margin-right: 0;
+}
+.con img{
+    width: 220px;
+    height: 130px;
+}
+.con .sf{
+position: absolute;
+z-index: 10;
+padding: 0 8px;
+background-color: #fe5341;
+color: white;
+line-height: 22px;
+right:0;
+border-radius: 0 0 0 6px;
+}
+.con .title{
+    padding: 8px 14px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.con .label{
+    padding: 6px 0;
+    text-align: center;
+}
+.con .label span{
+    /* display: inline-block; */
+    padding: 2px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+.con .sq span{
+    color: #fe5341;
+}
+.con .sq{
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+}
+.con .current{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    
+}
+.green{
+    color: #80c269;
+}
+.red{
+    color:#fe5341;;
+}
+.redline span{
+    border: #fe5341 1px solid;
+}
+.greenline span{
+    border: #80c269 1px solid;
+}
+
+main .report-box .inner{
+    position: relative;
+    height: 590px;
+}
+main .guide .inner{
+    height: 350px;
+    position: relative;
+}
+main .guide .list{
+    background: url(./img/listbg.jpg) no-repeat bottom;
+}
+main .play .inner{
+    position: relative;
+}
+
+/* .play{
+    background-color: #ddd;
+} */
+

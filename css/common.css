@@ -1,0 +1,330 @@
+@keyframes fade{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fade{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-moz-keyframes fade{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-ms-keyframes fade{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+header,main,footer{
+    width: 100%;
+}
+header{
+    height: 375px;
+    
+}
+.inner{
+    width: 1000px;
+    margin: 0 auto;
+    /* background-color: gray; */
+}
+/* 头部 */
+/* 头部logo */
+.header-top{
+    width: 100%;
+    height: 74px;
+    border-bottom: 1px solid #d4cec2;
+    box-shadow:0 0 5px #cecfcf inside;
+}
+.header-top .inner .logo{
+    /* background-color: aqua; */
+    width: 134px;
+    height: 74px;
+    text-indent: -3000px;
+}
+.header-top .inner .logo:hover{
+    animation: fade 1s linear infinite;
+}
+.header-top .inner .logo h1{
+    width: 134px;
+    height: 52px;
+    background-image: url(../img/logonew.png);
+    background-size: 100% 100%;
+    margin-top: 14px;
+}
+.header-top .inner .logo h1 a{
+    width: 134px;
+    height: 52px;
+    display: block;
+}
+/* 头部导航栏 */
+.header-top .inner .nav{
+    /* background-color: #fff; */
+    width: 400px;
+    height: 74px;
+    margin-left: 65px;
+}
+.header-top .inner .nav ul li{
+    float: left;
+    font-size: 20px;
+    padding-top: 34px;
+    margin-right: 50px;
+}
+ .login a{
+    color: #fe5341;
+}
+.header-top .inner .nav ul li a{
+    color: black;
+}
+.header-top .inner .nav ul .active a {
+    color: #fe5341;
+}
+.header-top .inner .nav ul li:last-child{
+    margin-right: 0;
+}
+/* 头部搜索 */
+.header-top .inner .search{   
+    margin-top: 25px;
+}
+.header-top .inner .search .iconfont{
+    font-size: 28px;
+    color: #7a7a7a;
+}
+.header-top .inner .search .icon:hover{
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.08s ease;
+}
+.header-top .inner .login{
+    width: 50px;
+    height: 30px;
+    border: 1px #fe5341 solid;
+    font-size: 16px;
+    text-align: center;
+    /* vertical-align:30px; */
+    line-height: 30px;
+    margin-top: 23px;
+    margin-left: 34px;
+    color: #fe5341;
+    border-radius: 2px;
+    
+}
+.header-top .inner .login:hover{
+    background-color: #fe5341;
+    color:white;
+    cursor: pointer;
+    transition:  all 0.15s linear;
+}
+
+/* main{
+    
+} */
+main a{
+    color: black;
+}
+main  h2{
+    padding: 18px 0 16px;
+    font-size: 20px;
+    color: black;
+}
+
+
+
+main .inner .more{
+    position: absolute;
+    top: 28px;
+    right: 0;
+    color: #fe5341;
+    padding-right: 17px;
+    background: url(./img/readMore.png) no-repeat right;
+}
+
+
+.common img{
+    width: 220px;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+    padding-left: 1px;
+}
+ .common ul li{
+    width: 222px;
+    height: 233px;
+    line-height: 21px;
+    margin: 0 37px 20px 0;
+    float: left;
+    border-radius: 6px;
+    background-color: white;
+}
+.common .info{
+    padding: 10px;
+}
+.common .info .name{
+    font-size: 14px;
+    word-break: break-all;
+    height: 45px;
+    margin-bottom: 15px;
+    /* overflow: hidden; */
+}
+.common .info .fix span{
+    padding-left:14px;
+}
+.common .info .fix .xin{
+    background: url(./img/xin.png) no-repeat left;
+}
+.common .info .fix .talk{
+    background: url(./img/reply.png) no-repeat left;
+}
+ .common ul li:nth-of-type(4n+4){
+    margin-right: 0;
+}
+.common li:hover img{
+    animation: fade 1s linear infinite;
+}
+
+.play .inner .name span{
+    color: #a3a3a3;
+    display: block;
+    font-size: 12px;
+}
+.play .inner .price{
+    font-size: 14px;
+    color: #fe5341;
+}
+
+.btn-more{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.btn-more .commore{
+    color: #fe5341;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.btn-more  .clickmore{
+    background: url(./img/more.png) no-repeat left center;
+}
+.btn-more  .loadmore{
+    background: url(./img/loading-icon.gif) no-repeat left center;
+}
+
+#backtop{
+    width: 50px;
+    height: 50px;
+    background: #ccc url(./img/back.png) no-repeat center;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition:background .1s linear;
+}
+#backtop:hover{
+    opacity: 1;
+}
+
+footer{
+    /* height: 360px; */
+    background-color: #505050;
+    color: #a3a3a3;
+    padding: 40px 0 15px;
+}
+footer .inner{
+    width:1000px ;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.footer-box{
+    width: 1000px;
+}
+.footer-box a{
+    color: #a3a3a3;
+    display: block;
+}
+.footer-box span{
+    color: white;
+    font-size: 16px;
+    padding-bottom: 25px;
+    display: block;
+}
+.footer-box div{
+    float: left;
+    font-size: 13px;
+    padding-left: 22px;
+    line-height: 20px;
+}
+
+.footer-box div:nth-child(1){
+    padding-left: 0;
+}
+.footer-box div:nth-child(2){
+    width: 140px;
+}
+.footer-box div:nth-child(3){
+    width: 100px;
+}
+.footer-box div:nth-child(4){
+    width: 140px;
+}
+.footer-box div:nth-child(5){
+    width: 148px;
+}
+.footer-box div:nth-child(6){
+    width: 180px;
+}
+
+.footer-box li{
+    float: left;
+}
+.footer-box .jiguo img{
+    padding-bottom: 25px;
+}
+.footer-box .jiguo p:last-child{
+    margin-top: 15px;
+}
+
+.footer-box div:nth-child(4) li:first-child{
+    padding-right: 8px;
+}
+
+footer .copy{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 13px;
+}
+
+/* 试用页面的con */
+.shiyong ul li{
+    height: 300px;
+}
+.play .con{
+    height: 300px;
+}
